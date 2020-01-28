@@ -1,0 +1,10 @@
+[
+    {
+        "sobject": "Object1__c", 
+        "saveRefs": true, 
+        "resolveRefs": false, 
+        "files": ["Object1__c.json"]
+    }
+    
+
+]

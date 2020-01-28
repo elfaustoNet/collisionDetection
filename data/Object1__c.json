@@ -1,0 +1,15 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Object1__c",
+                "referenceId": "Object1__cRef1"
+            },
+            "Name": "Demo Record 1",
+            "TextField1__c": "ABCCompany",
+            "TextField2__c": "Field2-1",
+            "TextField3__c": "Field3",
+            "Checkbox1__c": false
+        }
+    ]
+}

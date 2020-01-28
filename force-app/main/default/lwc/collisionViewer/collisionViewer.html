@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Record Details">
+        <div class="slds-m-around_small">
+            <template if:true={object1}>
+                <!-- used to display reload message-->
+                <template if:true={refreshNeeded}>
+                    <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert">
+                        <h2>This record has been updated by {updateUserName}. You need to reload component.</h2>  
+                        <lightning-button class="slds-m-left_small slds-m-top_small" variant="neutral" onclick={reloadPage} label="Reload"></lightning-button>
+                    </div>
+                </template>
+                <lightning-input label="Name" value={object1.fields.Name.value} data-field="Name"></lightning-input>
+                <lightning-input label="TextField1" value={object1.fields.TextField1__c.value} data-field="TextField1"></lightning-input>
+                <lightning-input label="TextField2" value={object1.fields.TextField2__c.value} data-field="TextField2"></lightning-input>
+                <lightning-input label="TextField3" value={object1.fields.TextField3__c.value} data-field="TextField3"></lightning-input>
+                <lightning-input class="slds-p-top_small slds-p-bottom_small" label="Checkbox1" checked={object1.fields.Checkbox1__c.value} type="checkbox" data-field="Checkbox1"></lightning-input>
+                
+                <!-- Button to demonstrate using UI API updateRecord and ifUnmodifiedSince-->
+                <lightning-button class="slds-m-top_small" variant="brand"
+                        onclick={updateObject}
+                        label="Update"></lightning-button>
+                <!-- Button to demonstrate apex update and server side modstamp check-->
+                <lightning-button class="slds-m-top_small slds-m-left_small" variant="brand"
+                        onclick={updateObject2}
+                        label="Apex Update"></lightning-button>
+            </template>
+        </div>
+    </lightning-card>
+</template>

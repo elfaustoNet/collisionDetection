@@ -1,0 +1,10 @@
+{
+  "orgName": "ABC Company",
+  "edition": "Partner Developer",
+  "features": [],
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    }
+  }
+}
