@@ -19,6 +19,8 @@ force-app/main/default/profiles/Custom%3A Support Profile.profile-meta.xml
 Custom%3A Support Profile.profile
 force-app/main/default/layouts/test1__mdt-test1 Layout.layout-meta.xml
 test1__mdt-test1 Layout.layout
+Admin.profile
+force-app/main/default/profiles/Admin.profile-meta.xml
 Security.settings
 Object1__c.Workflow
 Workflow.workflow
